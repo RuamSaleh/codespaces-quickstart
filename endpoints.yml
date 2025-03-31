@@ -1,0 +1,10 @@
+action_endpoint:
+  url: "http://localhost:5055/webhook"
+  actions_module: "actions"
+
+model_groups:
+  - id: gemini_llm
+    models:
+      - provider: gemini
+        model: gemini-2.0-flash
+        api_key: ${API_KEY}

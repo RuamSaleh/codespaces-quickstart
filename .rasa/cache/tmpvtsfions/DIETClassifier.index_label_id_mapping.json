@@ -1,0 +1,14 @@
+{
+  "0": "affirm",
+  "1": "ask_gift_recommendation",
+  "2": "bot_challenge",
+  "3": "deny",
+  "4": "goodbye",
+  "5": "greet",
+  "6": "mood_great",
+  "7": "mood_unhappy",
+  "8": "provide_gift_preferences",
+  "9": "provide_gift_request",
+  "10": "provide_occasion",
+  "11": "provide_recipient_type"
+}

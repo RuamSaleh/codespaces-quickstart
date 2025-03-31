@@ -1,0 +1,16 @@
+version: "3.1"
+rules:
+  # Removed unused rules and intents
+  - rule: Handle occasion slot
+    steps:
+      - intent: provide_occasion
+      - action: action_set_occasion
+      - slot_was_set:
+          - occasion: "birthday"
+
+  - rule: Handle recipient type slot
+    steps:
+      - intent: provide_recipient_type
+      - action: action_set_recipient_type
+      - slot_was_set:
+          - recipient_type: "all"

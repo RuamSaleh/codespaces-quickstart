@@ -1,0 +1,228 @@
+gift_name: Mushroom Table Lamp
+Description: Beautiful modern mushroom-shaped table lamp, perfect for home decor
+price_range: 100-200
+occasion: birthday
+recipient_type: all
+----------------------------------------
+gift_name: Designer Sunglasses
+Description: Stylish designer sunglasses with modern design
+price_range: 200-500
+occasion: birthday
+recipient_type: all
+----------------------------------------
+gift_name: 14K Gold Necklace
+Description: Elegant 14K gold necklace with classic design
+price_range: 1000-2000
+occasion: graduation
+recipient_type: women
+----------------------------------------
+gift_name: Classic Diamond Earrings
+Description: Classic diamond earrings with elegant design
+price_range: 2000-5000
+occasion: graduation
+recipient_type: women
+----------------------------------------
+gift_name: Gold Gemstone Necklace
+Description: Gold necklace with precious gemstone, modern design
+price_range: 1500-3000
+occasion: graduation
+recipient_type: women
+----------------------------------------
+gift_name: Vogue Sunglasses
+Description: Vogue brand sunglasses, latest model
+price_range: 500-1000
+occasion: birthday
+recipient_type: all
+----------------------------------------
+gift_name: Digital Camera
+Description: Professional digital camera with advanced features
+price_range: 1000-3000
+occasion: birthday
+recipient_type: all
+----------------------------------------
+gift_name: Designer Gold Necklace
+Description: Unique designer gold necklace
+price_range: 2000-4000
+occasion: graduation
+recipient_type: women
+----------------------------------------
+gift_name: Luxury Makeup Set
+Description: Complete makeup set from luxury brand
+price_range: 500-1000
+occasion: birthday
+recipient_type: women
+----------------------------------------
+gift_name: Dior New Perfume
+Description: Luxury Dior perfume, new edition
+price_range: 500-1500
+occasion: birthday
+recipient_type: all
+----------------------------------------
+gift_name: Panthère Women's Watch
+Description: Elegant Panthère women's watch
+price_range: 1000-2000
+occasion: graduation
+recipient_type: women
+----------------------------------------
+gift_name: LEGO Space Ship
+Description: graduation edition LEGO space ship set
+price_range: 500-1000
+occasion: birthday
+recipient_type: kids
+----------------------------------------
+gift_name: LEGO Magic Castle
+Description: LEGO magic castle set for kids
+price_range: 300-700
+occasion: birthday
+recipient_type: kids
+----------------------------------------
+gift_name: LEGO Racing Car
+Description: LEGO racing car set with figures
+price_range: 200-500
+occasion: birthday
+recipient_type: kids
+----------------------------------------
+gift_name: Givenchy Perfume
+Description: Luxury Givenchy perfume for men
+price_range: 500-1000
+occasion: birthday
+recipient_type: men
+----------------------------------------
+gift_name: JBL Headphones
+Description: Wireless JBL headphones with high sound quality
+price_range: 300-700
+occasion: birthday
+recipient_type: all
+----------------------------------------
+gift_name: Designer Leather Handbag
+Description: Natural leather handbag with modern design
+price_range: 1000-2500
+occasion: graduation
+recipient_type: women
+----------------------------------------
+gift_name: Givenchy Wallet
+Description: Luxury leather wallet from Givenchy
+price_range: 500-1000
+occasion: birthday
+recipient_type: all
+----------------------------------------
+gift_name: Sports Bluetooth Headphones
+Description: Waterproof wireless sports headphones
+price_range: 200-500
+occasion: birthday
+recipient_type: all
+----------------------------------------
+gift_name: Stanley Premium Pen
+Description: Premium Stanley pen with gift box
+price_range: 100-300
+occasion: birthday
+recipient_type: all
+----------------------------------------
+gift_name: Skincare Set
+Description: Premium skincare product collection
+price_range: 300-700
+occasion: birthday
+recipient_type: women
+----------------------------------------
+gift_name: Givenchy Men's Care Set
+Description: Givenchy personal care set for men
+price_range: 500-1000
+occasion: birthday
+recipient_type: men
+----------------------------------------
+gift_name: Givenchy Plush Toy
+Description: Soft plush toy for kids
+price_range: 100-200
+occasion: birthday
+recipient_type: kids
+----------------------------------------
+gift_name: Fujifilm Camera Bag
+Description: Professional Fujifilm camera bag
+price_range: 500-1000
+occasion: birthday
+recipient_type: all
+----------------------------------------
+gift_name: LEGO Classic Car
+Description: Classic car LEGO model
+price_range: 200-400
+occasion: birthday
+recipient_type: kids
+----------------------------------------
+gift_name: JW Sports Headphones
+Description: Waterproof sports headphones
+price_range: 150-300
+occasion: birthday
+recipient_type: all
+----------------------------------------
+gift_name: GUESS Sunglasses
+Description: GUESS brand sunglasses
+price_range: 300-600
+occasion: birthday
+recipient_type: all
+----------------------------------------
+gift_name: JW Pro Sports Headphones
+Description: JW sports headphones with microphone
+price_range: 200-400
+occasion: birthday
+recipient_type: all
+----------------------------------------
+gift_name: Fuji Camera Bag
+Description: Compact Fuji camera bag
+price_range: 300-600
+occasion: birthday
+recipient_type: all
+----------------------------------------
+gift_name: Apple AirPods
+Description: Apple wireless earbuds with charging case
+price_range: 800-1500
+occasion: birthday
+recipient_type: all
+----------------------------------------
+gift_name: Coach Women's Watch
+Description: Women's watch from Coach
+price_range: 500-1000
+occasion: graduation
+recipient_type: women
+----------------------------------------
+gift_name: Sony Noise-Canceling
+Description: Sony wireless noise-canceling headphones
+price_range: 700-1500
+occasion: birthday
+recipient_type: all
+----------------------------------------
+gift_name: Apple AirPods Pro
+Description: Advanced Apple AirPods Pro
+price_range: 1000-2000
+occasion: birthday
+recipient_type: all
+----------------------------------------
+gift_name: Sony Premium Headphones
+Description: Professional Sony headphones
+price_range: 500-1000
+occasion: birthday
+recipient_type: all
+----------------------------------------
+gift_name: Nintendo SWITCH
+Description: Nintendo SWITCH gaming console with game
+price_range: 1500-2500
+occasion: birthday
+recipient_type: all
+----------------------------------------
+gift_name: Classic Sunglasses
+Description: Classic design sunglasses
+price_range: 200-400
+occasion: birthday
+recipient_type: all
+----------------------------------------
+gift_name: SMEG Men's Watch
+Description: Men's watch from SMEG
+price_range: 500-1000
+occasion: graduation
+recipient_type: men
+----------------------------------------
+gift_name: SMEG Sunglasses
+Description: Sunglasses from SMEG
+price_range: 300-600
+occasion: birthday
+recipient_type: women
+----------------------------------------

@@ -1,0 +1,48 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_gift_recommendation\"}}]": "gift_form",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_gift_recommendation\"}}, {\"active_loop\": {\"name\": \"gift_form\"}, \"prev_action\": {\"action_name\": \"gift_form\"}, \"user\": {\"intent\": \"ask_gift_recommendation\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]": "utter_goodbye",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]": "action_listen",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"gift_form\"}}]": "action_recommend_gift",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"gift_form\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_recommend_gift\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"provide_recipient_type\"}}]": "action_set_recipient_type",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"provide_recipient_type\"}}, {\"prev_action\": {\"action_name\": \"action_set_recipient_type\"}, \"slots\": {\"recipient_type\": [1.0]}, \"user\": {\"intent\": \"provide_recipient_type\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"provide_occasion\"}}]": "action_set_occasion",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"provide_occasion\"}}, {\"prev_action\": {\"action_name\": \"action_set_occasion\"}, \"slots\": {\"occasion\": [1.0]}, \"user\": {\"intent\": \"provide_occasion\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}]": "utter_iamabot",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}, {\"prev_action\": {\"action_name\": \"utter_iamabot\"}, \"user\": {\"intent\": \"bot_challenge\"}}]": "action_listen"
+    },
+    "rule_only_slots": [
+      "recipient_type",
+      "occasion"
+    ],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}}, {\"active_loop\": {\"name\": \"gift_form\"}, \"prev_action\": {\"action_name\": \"gift_form\"}, \"user\": {\"intent\": \"ask_gift_recommendation\"}}]": "do_not_predict_loop_action",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}}, {\"active_loop\": {\"name\": \"gift_form\"}, \"prev_action\": {\"action_name\": \"gift_form\"}, \"slots\": {\"language\": [1.0]}, \"user\": {\"intent\": \"ask_gift_recommendation\"}}]": "do_not_predict_loop_action",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}}, {\"active_loop\": {\"name\": \"gift_form\"}, \"prev_action\": {\"action_name\": \"action_recommend_gift\"}, \"slots\": {\"language\": [1.0]}, \"user\": {\"intent\": \"provide_gift_preferences\"}}]": "do_not_predict_loop_action",
+      "[{\"prev_action\": {\"action_name\": \"action_recommend_gift\"}}, {\"active_loop\": {\"name\": \"gift_form\"}, \"prev_action\": {\"action_name\": \"utter_ask_another\"}, \"slots\": {\"language\": [1.0]}, \"user\": {\"intent\": \"provide_gift_preferences\"}}]": "do_not_predict_loop_action",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}}, {\"active_loop\": {\"name\": \"gift_form\"}, \"prev_action\": {\"action_name\": \"utter_deny\"}, \"slots\": {\"language\": [1.0]}, \"user\": {\"intent\": \"deny\"}}]": "do_not_predict_loop_action",
+      "[{\"prev_action\": {\"action_name\": \"utter_deny\"}}, {\"active_loop\": {\"name\": \"gift_form\"}, \"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"slots\": {\"language\": [1.0]}, \"user\": {\"intent\": \"deny\"}}]": "do_not_predict_loop_action",
+      "[{\"prev_action\": {\"action_name\": \"utter_affirm\"}}, {\"active_loop\": {\"name\": \"gift_form\"}, \"prev_action\": {\"action_name\": \"gift_form\"}, \"slots\": {\"language\": [1.0]}, \"user\": {\"intent\": \"affirm\"}}]": "do_not_predict_loop_action"
+    },
+    "rules_not_in_stories": [
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"gift_form\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_recommend_gift\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"provide_occasion\"}}]",
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"provide_recipient_type\"}}]",
+      "handling active loops and forms - gift_form",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"provide_recipient_type\"}}, {\"prev_action\": {\"action_name\": \"action_set_recipient_type\"}, \"slots\": {\"recipient_type\": [1.0]}, \"user\": {\"intent\": \"provide_recipient_type\"}}]",
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"provide_occasion\"}}, {\"prev_action\": {\"action_name\": \"action_set_occasion\"}, \"slots\": {\"occasion\": [1.0]}, \"user\": {\"intent\": \"provide_occasion\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}]",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"gift_form\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}, {\"prev_action\": {\"action_name\": \"utter_iamabot\"}, \"user\": {\"intent\": \"bot_challenge\"}}]"
+    ]
+  }
+}

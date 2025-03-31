@@ -1,0 +1,154 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - hey there
+    - greetings
+    - what's up
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you around
+    - see you later
+    - good night
+    - have a nice day
+    - take care
+
+- intent: affirm
+  examples: |
+    - yes
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - sure
+    - ok
+    - why not
+    - yes please
+    - yeah
+
+- intent: deny
+  examples: |
+    - no
+    - never
+    - I don't think so
+    - no way
+    - not really
+    - none
+    - absolutely not
+    - no thanks
+    - I don't want that
+    - no need
+
+- intent: ask_gift_recommendation
+  examples: |
+    - I need gift recommendations
+    - can you suggest a gift
+    - help me find a gift
+    - I'm looking for a gift
+    - what gift should I buy
+    - recommend me a gift
+    - gift ideas please
+    - I need help choosing a gift
+    - suggest some gifts
+    - what would be a good gift
+    - I want a gift suggestion
+    - birthday gift for a woman
+    - I need a gift for a woman for her birthday
+    - Looking for a birthday gift for a lady
+
+- intent: provide_gift_preferences
+  examples: |
+    - I need a gift for my [sister](recipient_type) for her [birthday](occasion)
+    - looking for a [wedding](occasion) gift for my [friend](recipient_type)
+    - need a [graduation](occasion) present for my [brother](recipient_type)
+    - want to buy something for my [mom](recipient_type) for [mother's day](occasion)
+    - searching for a [Christmas](occasion) gift for my [dad](recipient_type)
+    - need a [birthday](occasion) gift for my [wife](recipient_type)
+    - looking for an [anniversary](occasion) gift for my [husband](recipient_type)
+    - want to get something for my [colleague](recipient_type)'s [promotion](occasion)
+    - need a gift for my [boyfriend](recipient_type) for [valentine's day](occasion)
+    - searching for a [housewarming](occasion) gift for my [neighbors](recipient_type)
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - wonderful
+    - excellent
+    - thank you
+    - that's helpful
+    - exactly what I needed
+
+- intent: mood_unhappy
+  examples: |
+    - not good
+    - terrible
+    - not helpful
+    - bad
+    - that's not what I want
+    - I don't like these suggestions
+    - these options aren't good
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: choose_gift_hint
+  examples: |
+    - I need a hint for a gift
+    - Can you give me a gift hint?
+    - Help me decide on a gift
+
+- intent: provide_contact_info
+  examples: |
+    - The recipient's name is [John](recipient_name)
+    - Contact info is [john@example.com](contact_info)
+    - You can reach them at [123-456-7890](contact_info)
+
+- intent: provide_gift_link
+  examples: |
+    - Here is the gift link: [www.example.com/gift](gift_link)
+    - The gift link is [www.gift.com](gift_link)
+    - Check this link: [www.mygift.com](gift_link)
+
+- intent: provide_gift_request
+  examples: |
+    - I want a gift recommendation
+    - Can you recommend a gift?
+    - Please suggest a gift for me
+    - I need help finding a gift
+
+- intent: provide_recipient_type
+  examples: |
+    - It's for my [sister](recipient_type)
+    - The gift is for a [friend](recipient_type)
+    - I need a gift for my [mom](recipient_type)
+    - It's for a [colleague](recipient_type)
+
+- intent: provide_occasion
+  examples: |
+    - It's for a [birthday](occasion)
+    - The occasion is [graduation](occasion)
+    - I need a gift for [Christmas](occasion)
+    - It's for a [wedding](occasion)
+
+- intent: provide_gift_link_request
+  examples: |
+    - I want to share a gift link
+    - Can I provide a gift link?
+    - I have a gift link to share
+
+

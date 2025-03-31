@@ -1,0 +1,117 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - ask_gift_recommendation
+  - provide_gift_preferences
+  - choose_gift_hint
+  - provide_contact_info
+  - provide_gift_request
+  - provide_gift_link
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - provide_recipient_type
+  - provide_occasion
+
+entities:
+  - recipient_type
+  - occasion
+  - price_range
+  - gift_type
+  - recipient_name
+  - contact_info
+  - gift_link
+
+slots:
+  gift_preferences:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: gift_form
+            requested_slot: gift_preferences
+  recipient_info:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: gift_hint_form
+            requested_slot: recipient_info
+  occasion:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: occasion
+  recipient_type:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: recipient_type
+
+responses:
+  utter_greet:
+    - text: "Hello! I can help you find the perfect gift. Would you like a gift recommendation?"
+
+  utter_goodbye:
+    - text: "Goodbye! Have a great day!"
+
+  utter_ask_gift_preferences:
+    - text: "Please tell me about who you're buying the gift for and the occasion (e.g., birthday gift for my sister)."
+
+  utter_ask_another:
+    - text: "Would you like another gift recommendation?"
+
+  utter_affirm:
+    - text: "Great! Let me help you find another gift."
+
+  utter_deny:
+    - text: "Alright! I hope you found what you were looking for."
+
+  utter_ask_contact_info:
+    - text: "Please provide the recipient's name and contact information."
+
+  utter_confirm_request_sent:
+    - text: "I've sent the gift hint request. The recipient will be notified."
+
+  utter_ask_gift_request:
+    - text: "You've received a gift hint request. Would you like to share a gift link?"
+
+  utter_ask_gift_link:
+    - text: "Please provide the link to your desired gift."
+
+  utter_confirm_gift_link:
+    - text: "Thanks! I've saved your gift link."
+
+  utter_iamabot:
+    - text: "I am a gift recommendation bot, designed to help you find the perfect gift."
+
+  utter_happy:
+    - text: "I'm glad you're happy! Let me help you find the perfect gift."
+
+  utter_cheer_up:
+    - text: "Here's something to cheer you up: finding the perfect gift can make anyone's day better!"
+
+actions:
+  - action_recommend_gift
+  - action_send_gift_request
+  - action_handle_gift_link
+  - action_set_occasion
+  - action_set_recipient_type
+
+forms:
+  gift_form:
+    required_slots:
+      - gift_preferences
+  gift_hint_form:
+    required_slots:
+      - recipient_info
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

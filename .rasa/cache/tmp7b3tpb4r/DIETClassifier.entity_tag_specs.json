@@ -1,0 +1,28 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-occasion",
+      "2": "I-occasion",
+      "3": "L-occasion",
+      "4": "U-occasion",
+      "5": "B-recipient_type",
+      "6": "I-recipient_type",
+      "7": "L-recipient_type",
+      "8": "U-recipient_type",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-occasion": 1,
+      "I-occasion": 2,
+      "L-occasion": 3,
+      "U-occasion": 4,
+      "B-recipient_type": 5,
+      "I-recipient_type": 6,
+      "L-recipient_type": 7,
+      "U-recipient_type": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]

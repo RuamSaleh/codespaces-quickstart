@@ -1,0 +1,75 @@
+stories:
+- story: happy gift recommendation path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_gift_recommendation
+  - action: gift_form
+  - active_loop: gift_form
+  - intent: provide_gift_preferences
+  - action: action_recommend_gift
+  - action: utter_ask_another
+  - intent: affirm
+  - action: utter_affirm
+  - action: gift_form
+  - active_loop: gift_form
+  - intent: provide_gift_preferences
+  - action: action_recommend_gift
+  - action: utter_ask_another
+  - intent: deny
+  - action: utter_deny
+  - action: utter_goodbye
+
+- story: single recommendation path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_gift_recommendation
+  - action: gift_form
+  - active_loop: gift_form
+  - intent: provide_gift_preferences
+  - action: action_recommend_gift
+  - action: utter_ask_another
+  - intent: deny
+  - action: utter_deny
+  - action: utter_goodbye
+
+- story: user feels great
+  steps:
+  - intent: mood_great
+  - action: utter_happy
+
+- story: user feels unhappy
+  steps:
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  
+- story: Handle gift request
+  steps:
+  - intent: provide_gift_request
+  - action: action_recommend_gift
+
+- story: gift recommendation path
+  steps:
+  - intent: ask_gift_recommendation
+  - action: gift_form
+  - active_loop: gift_form
+  - intent: provide_gift_preferences
+  - action: action_recommend_gift
+
+- story: user asks for gift hint
+  steps:
+  - intent: choose_gift_hint
+  - action: utter_ask_contact_info
+  - intent: provide_contact_info
+  - action: action_send_gift_request
+  - action: utter_confirm_request_sent
+
+- story: user provides gift link
+  steps:
+  - intent: provide_gift_link_request
+  - action: utter_ask_gift_link
+  - intent: provide_gift_link
+  - action: action_handle_gift_link
+  - action: utter_confirm_gift_link
+

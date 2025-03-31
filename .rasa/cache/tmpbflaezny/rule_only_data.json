@@ -1,0 +1,7 @@
+{
+  "rule_only_slots": [],
+  "rule_only_loops": [
+    "gift_form",
+    "gift_hint_form"
+  ]
+}

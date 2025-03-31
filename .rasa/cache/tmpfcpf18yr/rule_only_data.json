@@ -1,0 +1,7 @@
+{
+  "rule_only_slots": [
+    "recipient_type",
+    "occasion"
+  ],
+  "rule_only_loops": []
+}
